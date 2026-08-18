@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Inquiries | Shega Traditional Clothes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="sticky-navbar">
+      <div class="navbar-inner-wrapper">
+        <div class="branding-group">
+          <a href="index.html" class="nav-brand-title">Shega</a>
+          <span class="nav-brand-sub">TRADITIONAL CLOTHES</span>
+        </div>
+        <div class="navigation-links-list">
+          <a href="index.html" class="menu-nav-link">Home</a>
+          <a href="collection.html" class="menu-nav-link">Collection</a>
+          <a href="about.html" class="menu-nav-link">About</a>
+          <a href="contact.html" class="menu-nav-link active">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="tilet-border-line"></div>
+
+    <!-- PREMIUM CONTACT FORM OVERLAY -->
+    <section class="contact-form-section-wrapper">
+      <div class="content-bound-container narrow-form-layout reveal">
+        <div class="center-section-head">
+          <span class="small-tag-label text-center">GET IN TOUCH</span>
+          <h2>Order or Inquire</h2>
+          <p class="section-subtitle">
+            Send us a message to check availability or request a custom-fitted
+            design layout.
+          </p>
+        </div>
+        <form
+          id="contactForm"
+          class="shega-premium-form"
+          onsubmit="
+            event.preventDefault();
+            alert('Thank you! Your custom inquiry has been recorded.');
+          "
+        >
+          <div class="input-field-row">
+            <label for="clientName">Name</label>
+            <input
+              type="text"
+              id="clientName"
+              required
+              placeholder="Your beautiful name"
+            />
+          </div>
+          <div class="input-field-row">
+            <label for="clientEmail">Email</label>
+            <input
+              type="email"
+              id="clientEmail"
+              required
+              placeholder="name@domain.com"
+            />
+          </div>
+          <div class="input-field-row">
+            <label for="clientMessage">Message</label>
+            <textarea
+              id="clientMessage"
+              rows="5"
+              required
+              placeholder="Tell us which design or custom size you are interested in..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn filled-btn submit-action-btn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="editorial-footer-layer">
+      <div class="content-bound-container footer-flex-container">
+        <div class="footer-left-brand">
+          <span class="footer-title">SHEGA</span>
+          <span class="footer-subtitle">TRADITIONAL CLOTHES</span>
+        </div>
+        <p class="copyright-notice-text">
+          &copy; 2026 Shega Traditional Clothes.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
