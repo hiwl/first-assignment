@@ -1,7 +1,6 @@
 javascript
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- MOBILE BURGER DRAWER ENGINE ---
     const menuToggle = document.getElementById('menuToggle');
     const navLinksList = document.getElementById('navLinksList');
 
@@ -10,8 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinksList.classList.toggle('mobile-visible');
         });
     }
-
-    // --- STATIC CONTENT ENGINE SCROLL REVEAL LAYER ---
     const revealItems = document.querySelectorAll('.reveal, .reveal-delayed');
 
     const handleRevealAnimation = () => {
@@ -26,6 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', handleRevealAnimation);
-    // Execute instantly on boot for top items above page fold
     handleRevealAnimation();
 });
