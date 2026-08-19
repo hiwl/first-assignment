@@ -1,2 +1,2 @@
-#my first assihnment  
-#static website
+my first assgnment  
+static website
